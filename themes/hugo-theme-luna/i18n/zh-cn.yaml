@@ -60,11 +60,8 @@ taxonomy:
     totalCategories: 当前共有 {{ . }} 个分类
 
 runTime:
-    text: "运行时间："
-    days: "天"
-    hours: "小时"
-    minutes: "分钟"
-    seconds: "秒"
+    text: "🕓 Run Time:"
+    days: "Days"
 
 # navbar
 navbar:

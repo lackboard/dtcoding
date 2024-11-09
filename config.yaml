@@ -264,11 +264,11 @@ params:
     enabled: true
     # 网站创建时间
     # Site creation time
-    creatTime: 2016/12/12
+    creatTime: 2024/11/9
   
   #  网站创建年份
   # Site creation year
-  since: "2016"
+  since: "2024"
 
   # 显示文章过时提醒
   # show warning when outdated info detected
@@ -431,7 +431,7 @@ languages:
       font: "Times New Roman,Times,Heti Song,serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol"
       github:
         id: "Ice-Hazymoon"
-        minStars: 10
+        minStars: 10 
       license:
         enabled: true
         name: "署名 - 非商业性使用 - 禁止演绎 4.0"
@@ -446,26 +446,26 @@ languages:
         giscus:
           <<: *giscus
           lang: "zh-CN"
-  en-us:
-    contentDir: content/en-us
-    languageName: English
-    params:
-      languageIcon: "images/i18n/en-us.svg" # in assets folder
-  ja:
-    contentDir: content/ja
-    languageName: 日本語
-    params:
-      languageIcon: "images/i18n/ja.svg"
-      font: "'-apple-system', BlinkMacSystemFont, 'Yu Gothic', '游ゴシック', YuGothic, '游ゴシック体', 'Noto Sans Japanese', 'ヒラギノ角ゴ Pro W3', 'メイリオ', 'Hiragino Kaku Gothic ProN', 'MS PGothic', Osaka, 'sans-serif'"
-      announcement:
-        enabled: true
-        file: "README.ja.md"
-      comments:
-        enabled: true
-        provider: "giscus"
-        giscus:
-          <<: *giscus
-          lang: "ja"
+  # en-us:
+  #   contentDir: content/en-us
+  #   languageName: English
+  #   params:
+  #     languageIcon: "images/i18n/en-us.svg" # in assets folder
+  # ja:
+  #   contentDir: content/ja
+  #   languageName: 日本語
+  #   params:
+  #     languageIcon: "images/i18n/ja.svg"
+  #     font: "'-apple-system', BlinkMacSystemFont, 'Yu Gothic', '游ゴシック', YuGothic, '游ゴシック体', 'Noto Sans Japanese', 'ヒラギノ角ゴ Pro W3', 'メイリオ', 'Hiragino Kaku Gothic ProN', 'MS PGothic', Osaka, 'sans-serif'"
+  #     announcement:
+  #       enabled: true
+  #       file: "README.ja.md"
+  #     comments:
+  #       enabled: true
+  #       provider: "giscus"
+  #       giscus:
+  #         <<: *giscus
+  #         lang: "ja"
     menu:
       main:
       - *mainMenuHome

@@ -31,8 +31,7 @@ paginate: 10
 permalinks:
   # 文章链接的格式
   # Format of posts links
-  posts: /:year/:month/:day/:slug.html # 2019/01/01/hello-world.html
-  pages: /:slug.html # about.html
+  posts: /posts/:slug # 2019/01/01/hello-world.html
 
 author:
   name: DT
@@ -96,13 +95,13 @@ $manuMain:
     params:
       icon: eva eva-heart
     url: /about/
-  - &mainMenuLinks
-    name: Links
-    weight: 30
-    identifier: links
-    params:
-      icon: eva eva-people
-    url: /links/
+  # - &mainMenuLinks
+  #   name: Links
+  #   weight: 30
+  #   identifier: links
+  #   params:
+  #     icon: eva eva-people
+  #   url: /links/
   - &mainMenuArchives
     name: Archives
     weight: 40
@@ -149,6 +148,7 @@ menu:
     - *mainMenuArchives
     - *mainMenuGitHub
     - *mainMenuSearch
+    - *mainMenuCategories
   # 副导航 / sub-navigation
   # sub:
   #   - name: Categories

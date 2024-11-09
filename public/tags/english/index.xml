@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>English on Hugo Theme Luna</title>
+    <link>http://localhost:2244/tags/english/</link>
+    <description>Recent content in English on Hugo Theme Luna</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 08 Nov 2024 23:01:04 +0800</lastBuildDate>
+    <atom:link href="http://localhost:2244/tags/english/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Typography</title>
+      <link>http://localhost:2244/2022/04/15/typography.html/</link>
+      <pubDate>Fri, 15 Apr 2022 02:49:13 +0200</pubDate>
+      <guid>http://localhost:2244/2022/04/15/typography.html/</guid>
+      <description>&lt;p&gt;Until now, trying to style an article, document, or blog post with Tailwind has been a tedious task that required a keen eye for typography and a lot of complex custom CSS.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

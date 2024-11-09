@@ -9,7 +9,7 @@ encrypt:
     encryptNoscript: "需要启用 Javascript 来解密内容"
 
 # links
-linksRank: "排名不分先后"
+# linksRank: "排名不分先后"
 
 # Archives
 archives:
@@ -67,8 +67,8 @@ runTime:
 navbar:
     home: "首页"
     about: "关于我"
-    links: "朋友们"
-    github: "GitHub"
+    # links: "朋友们"
+    # github: "GitHub"
     search: "搜索"
     archives: "归档"
     twitter: "推特"

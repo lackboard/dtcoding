@@ -202,7 +202,7 @@ params:
       repoID: "R_kgDONMoKpQ"
       category: "Announcements"
       categoryID: "DIC_kwDONMoKpc4CkIw0"
-      mapping: "pathname"
+      mapping: "title"
       reactionsEnabled: 1
       emitMetadata: 0
       lazy: false
@@ -415,9 +415,9 @@ params:
   author: DT
   keywords:
     - Hugo
-    - Hugo Theme
-    - Luna
-  description: "A simple, performance-first, SEO-friendly Hugo theme"
+    - dtcoding
+
+  description: "dt 的博客"
 
 build:
   noJSConfigInAssets: true

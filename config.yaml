@@ -198,15 +198,15 @@ params:
     enabled: true
     provider: "giscus" # custom | giscus
     giscus: &giscus
-      repo: "Ice-Hazymoon/hugo-theme-luna"
-      repoID: "R_kgDOHQOwYw"
-      category: "Comments"
-      categoryID: "DIC_kwDOHQOwY84CP0Sy"
-      mapping: "title"
+      repo: "lackboard/dtcoding"
+      repoID: "R_kgDONMoKpQ"
+      category: "Announcements"
+      categoryID: "DIC_kwDONMoKpc4CkIw0"
+      mapping: "pathname"
       reactionsEnabled: 1
       emitMetadata: 0
       lazy: false
-      lang: "en"
+      lang: "zh-CN"
 
   # Rss 配置
   # RSS configuration
@@ -412,7 +412,7 @@ params:
       site: "@Ice_Hazymoon"
     image: "featured.png" # in assets folder | false
 
-  author: Ice-Hazymoon
+  author: DT
   keywords:
     - Hugo
     - Hugo Theme

@@ -4,10 +4,12 @@ date: 2025-03-12T21:59:16+08:00
 featured_image: cover.png
 draft: false
 toc: true
-summary: 找到志同道合的伙伴
+summary: 生成代码，大大提高效率
 tags:
-  - Vant
+  - freemarker
   - SpringBoot
+  - picocli
+  - ant design pro
 categories:
   - Study
 ---
@@ -23,7 +25,7 @@ categories:
 
 以上命令获取的项目根路径，和idea中打开的项目有关如果打开的是
 
-![image-20250118150544378](%E9%B1%BC%E7%B1%BD%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90%E5%99%A8/image-20250118150544378.png)
+![image-20250118150544378](鱼籽代码生成器/image-20250118150544378.png)
 
 yuzi-generator 则根目录是yuzi-generator,如果直接打开yuzi-generator-basic则运行的是yuzi-generator-basic。
 
@@ -206,7 +208,7 @@ yuzi-generator 则根目录是yuzi-generator,如果直接打开yuzi-generator-ba
 
 性能优化闭环：
 
-![img](%E9%B1%BC%E7%B1%BD%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90%E5%99%A8/12f048ee-ebea-45ed-be65-7e36fd604a86.png)
+![img](鱼籽代码生成器/12f048ee-ebea-45ed-be65-7e36fd604a86.png)
 
 ### 性能优化分类
 
@@ -234,7 +236,7 @@ yuzi-generator 则根目录是yuzi-generator,如果直接打开yuzi-generator-ba
 
 通常，用户从发送请求，到最终得到数据，要分别经过以下节点：
 
-![img](%E9%B1%BC%E7%B1%BD%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90%E5%99%A8/2a3675a6-fe16-4d27-8efe-e66dc598a218.png)
+![img](鱼籽代码生成器/2a3675a6-fe16-4d27-8efe-e66dc598a218.png)
 
 每个节点，我们都有对应的优化方法：
 
@@ -359,7 +361,7 @@ response.getOutputStream().flush();
 
 在文档中介绍了几种方法，比如使用 CDN 就近下载、调试下载操作相关对象的参数等。
 
-![image.png](%E9%B1%BC%E7%B1%BD%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90%E5%99%A8/7878e9e4-f791-4f26-9dac-f41418505e8b.png)
+![image.png](鱼籽代码生成器/7878e9e4-f791-4f26-9dac-f41418505e8b.png)
 
 由于使用 CDN 会引入额外的开销，此处不采用。这种优化方式更适用于有实际收入的项目。
 
@@ -540,7 +542,7 @@ try {
 
 测试发现，使用文件缓存后，接口响应时长大幅缩短！只需 100 多毫秒就能完成下载，快了 100 多倍！
 
-![image.png](%E9%B1%BC%E7%B1%BD%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90%E5%99%A8/b1e628c8-7458-4cbb-957b-0123d96a1bbb.png)
+![image.png](鱼籽代码生成器/b1e628c8-7458-4cbb-957b-0123d96a1bbb.png)
 
 对于热门的代码生成器，**采用本地缓存的方式不仅能大大减少下载时长，还能节约对象存储的流量开销**，两全其美。
 
@@ -560,15 +562,15 @@ try {
 
 跟之前一样，先测试接口的整体耗时。以制作一个 ACM 模板项目生成器为例，测试结果如下：
 
-![image.png](%E9%B1%BC%E7%B1%BD%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90%E5%99%A8/64973054-f2b1-4a5a-a296-41f8d4e8f33e.png)
+![image.png](鱼籽代码生成器/64973054-f2b1-4a5a-a296-41f8d4e8f33e.png)
 
 平均每次制作要花费 3 秒左右，应该是有一定优化空间的。
 
 测试结果如下图（单位为毫秒）：
 
-![image.png](%E9%B1%BC%E7%B1%BD%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90%E5%99%A8/7e1c56a1-4f9b-451e-8303-dd1ceb0cfe2c.png)
+![image.png](鱼籽代码生成器/7e1c56a1-4f9b-451e-8303-dd1ceb0cfe2c.png)
 
-![image.png](%E9%B1%BC%E7%B1%BD%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90%E5%99%A8/90781fe4-eff2-4465-a3c5-cc5b4eb9c32f.png)
+![image.png](鱼籽代码生成器/90781fe4-eff2-4465-a3c5-cc5b4eb9c32f.png)
 
 #### 3、优化策略
 

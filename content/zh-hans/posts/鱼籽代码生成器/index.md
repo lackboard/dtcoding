@@ -1,7 +1,16 @@
-# 鱼籽代码生成器
-
-
-
+---
+title: "鱼籽代码生成器"
+date: 2025-03-12T21:59:16+08:00
+featured_image: cover.png
+draft: false
+toc: true
+summary: 找到志同道合的伙伴
+tags:
+  - Vant
+  - SpringBoot
+categories:
+  - Study
+---
 
 
 ## 有用的小技巧
